@@ -1,0 +1,15 @@
+--- libnemesi/src/rtsp/rtsp_send.c.orig	2013-02-16 19:54:26.000000000 +0100
++++ libnemesi/src/rtsp/rtsp_send.c	2013-02-17 13:04:04.448030306 +0100
+@@ -41,10 +41,10 @@
+                         const char *content_base, const char *pathname)
+ {
+     if (!pathname || *pathname == 0 || *pathname == '*') {
+-        snprintf(str, size, content_base);
++        snprintf(str, size, "%s", content_base);
+     } else if (!content_base || *content_base == 0 ||
+                strstr(pathname,"://") != NULL) {
+-        snprintf(str, size, pathname);
++        snprintf(str, size, "%s", pathname);
+     } else {
+         snprintf(str, size, "%s/%s", content_base, pathname);
+     }

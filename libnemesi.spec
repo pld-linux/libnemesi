@@ -13,6 +13,7 @@ Group:		Libraries
 # git clone git://git.lscube.org/libnemesi
 Source0:	%{name}.tar.xz
 # Source0-md5:	1ba1385440e44dde3009a285ae1164aa
+Patch0:		%{name}-format.patch
 URL:		http://lscube.org/projects/libnemesi_rtsp_rtp_client_library
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
@@ -76,6 +77,7 @@ Statyczna biblioteka libNeMeSi.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %{__libtoolize}
