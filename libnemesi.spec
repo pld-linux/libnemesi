@@ -16,6 +16,8 @@ Source0:	%{name}.tar.xz
 URL:		http://lscube.org/projects/libnemesi_rtsp_rtp_client_library
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake
+# to generate ChangeLog from git snapshot
+BuildRequires:	git-core
 BuildRequires:	libsctp-devel
 BuildRequires:	libtool
 BuildRequires:	netembryo-devel >= 0.1.1
