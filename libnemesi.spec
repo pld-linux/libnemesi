@@ -7,7 +7,7 @@ Summary(pl.UTF-8):	libNeMeSi - biblioteka klienta RTSP/RTP
 Name:		libnemesi
 Version:	0.7.0
 %define	subver	20101208
-Release:	0.%{subver}.1
+Release:	0.%{subver}.2
 License:	LGPL v2.1+
 Group:		Libraries
 # git clone git://git.lscube.org/libnemesi
