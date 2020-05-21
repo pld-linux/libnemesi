@@ -10,7 +10,8 @@ Version:	0.7.0
 Release:	0.%{subver}.2
 License:	LGPL v2.1+
 Group:		Libraries
-# git clone git://git.lscube.org/libnemesi
+# formerly git clone git://git.lscube.org/libnemesi
+# now available at https://github.com/lscube/libnemesi
 Source0:	%{name}.tar.xz
 # Source0-md5:	1ba1385440e44dde3009a285ae1164aa
 Patch0:		%{name}-format.patch
